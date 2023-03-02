@@ -47,7 +47,6 @@ __version__ = "1.0.0"
 
 
 
-
 class MyQueue:
     def __init__(self, *args, typed: type = None, size: int = None):
         """creat queue data structure
@@ -66,15 +65,13 @@ class MyQueue:
             raise TypeError("Typed must be an object")
         self._typed = typed
 
-        if size != None and (not isinstance(size, int)) or size <= 0:
+        if size != None and ((not isinstance(size, int)) or size <= 0):
             raise ValueError("Size must be a strict positive integer")
         self._size = size
 
         # add data to queue
         r = self._set_queue(*args)
 
-        if r > size or r < 0:
-            raise Exception("Queue wrongly init")
 
     def _get_type(self):
         """Get queue type

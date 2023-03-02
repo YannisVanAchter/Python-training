@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module my_queue</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">my_queue</strong> (version 1.0.0, 24 february 2023)</td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cyanni%5Conedrive%5Cdocuments%5Cgithub%5Cpython-training%5Cmy_queue.py">c:\users\yanni\onedrive\documents\github\python-training\my_queue.py</a></td></tr></table>
+    <p><span class="code">This&nbsp;module&nbsp;provide&nbsp;special&nbsp;Queue&nbsp;data&nbsp;structure<br>
+&nbsp;<br>
+Used&nbsp;in&nbsp;Python&nbsp;training&nbsp;session<br>
+&nbsp;<br>
+If&nbsp;you&nbsp;want&nbsp;to&nbsp;follow&nbsp;this&nbsp;training&nbsp;session&nbsp;please&nbsp;do&nbsp;not&nbsp;read&nbsp;the&nbsp;following&nbsp;file</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="my_queue.html#MyQueue">MyQueue</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="MyQueue">class <strong>MyQueue</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#MyQueue">MyQueue</a>(*args,&nbsp;typed:&nbsp;type&nbsp;=&nbsp;None,&nbsp;size:&nbsp;int&nbsp;=&nbsp;None)<br>
+&nbsp;<br>
+<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="MyQueue-__init__"><strong>__init__</strong></a>(self, *args, typed: type = None, size: int = None)</dt><dd><span class="code">creat&nbsp;queue&nbsp;data&nbsp;structure<br>
+&nbsp;<br>
+Create&nbsp;Queue&nbsp;data&nbsp;structure&nbsp;with&nbsp;type&nbsp;and&nbsp;size&nbsp;options.<br>
+&nbsp;<br>
+Args:<br>
+-----<br>
+&nbsp;&nbsp;&nbsp;&nbsp;typed&nbsp;(type,&nbsp;optional):&nbsp;type&nbsp;of&nbsp;data&nbsp;stored,&nbsp;if&nbsp;None&nbsp;we&nbsp;can&nbsp;add&nbsp;any&nbsp;type&nbsp;of&nbsp;data&nbsp;to&nbsp;the&nbsp;queue.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;size&nbsp;(int,&nbsp;optional):&nbsp;maximum&nbsp;size&nbsp;of&nbsp;the&nbsp;queue,&nbsp;if&nbsp;None&nbsp;we&nbsp;can&nbsp;add&nbsp;infinit&nbsp;values.&nbsp;Defaults&nbsp;to&nbsp;None.</span></dd></dl>
+
+<dl><dt><a name="MyQueue-__len__"><strong>__len__</strong></a>(self)</dt><dd><span class="code">return&nbsp;the&nbsp;current&nbsp;size&nbsp;of&nbsp;the&nbsp;queue<br>
+&nbsp;<br>
+Returns:<br>
+--------<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int:&nbsp;size&nbsp;of&nbsp;queue&nbsp;&gt;=&nbsp;0</span></dd></dl>
+
+<dl><dt><a name="MyQueue-dequeue"><strong>dequeue</strong></a>(self)</dt><dd><span class="code">Return&nbsp;the&nbsp;first&nbsp;value&nbsp;of&nbsp;the&nbsp;Queue<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="builtins.html#object">object</a>:&nbsp;first&nbsp;value&nbsp;of&nbsp;the&nbsp;Queue&nbsp;(if&nbsp;the&nbsp;Queue&nbsp;is&nbsp;empty,&nbsp;return&nbsp;None)</span></dd></dl>
+
+<dl><dt><a name="MyQueue-enqueue"><strong>enqueue</strong></a>(self, *values)</dt><dd><span class="code">Add&nbsp;values&nbsp;in&nbsp;the&nbsp;Queue<br>
+&nbsp;<br>
+Args:<br>
+-----<br>
+&nbsp;&nbsp;&nbsp;&nbsp;values&nbsp;(list):&nbsp;values&nbsp;to&nbsp;enqueue<br>
+&nbsp;<br>
+Raises:<br>
+-------<br>
+&nbsp;&nbsp;&nbsp;&nbsp;TypeError:&nbsp;if&nbsp;Queue&nbsp;is&nbsp;typed&nbsp;and&nbsp;one&nbsp;of&nbsp;the&nbsp;value&nbsp;does&nbsp;not&nbsp;respect&nbsp;this&nbsp;type&nbsp;casting</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>queue</strong></dt>
+<dd><span class="code">Return&nbsp;first&nbsp;element&nbsp;of&nbsp;the&nbsp;Queue<br>
+&nbsp;<br>
+Returns:<br>
+--------<br>
+&nbsp;&nbsp;&nbsp;&nbsp;object:&nbsp;the&nbsp;first&nbsp;object&nbsp;in&nbsp;the&nbsp;Queue&nbsp;(if&nbsp;Queue&nbsp;is&nbsp;typed&nbsp;it&nbsp;respect&nbsp;the&nbsp;type&nbsp;of&nbsp;the&nbsp;Queue)</span></dd>
+</dl>
+<dl><dt><strong>size</strong></dt>
+<dd><span class="code">get&nbsp;size&nbsp;of&nbsp;the&nbsp;Queue<br>
+&nbsp;<br>
+Get&nbsp;current&nbsp;size&nbsp;if&nbsp;there&nbsp;is&nbsp;no&nbsp;limit,&nbsp;else&nbsp;the&nbsp;limit<br>
+&nbsp;<br>
+Returns:<br>
+--------<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int:&nbsp;size&nbsp;of&nbsp;the&nbsp;Queue</span></dd>
+</dl>
+<dl><dt><strong>typed</strong></dt>
+<dd><span class="code">Get&nbsp;queue&nbsp;type<br>
+&nbsp;<br>
+Returns:<br>
+--------<br>
+&nbsp;&nbsp;&nbsp;&nbsp;type:&nbsp;type&nbsp;of&nbsp;object&nbsp;allow&nbsp;in&nbsp;the&nbsp;queue</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor author-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Author</strong></td></tr>
+    
+<tr><td class="decor author-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn">Yannis&nbsp;Van&nbsp;Achter&nbsp;&lt;yannis.vanachter@student.unamur.be&gt;</td></tr></table>
+</body></html>
